@@ -15,7 +15,28 @@
   <body>
        <?php include("header.php"); ?>
       <main>
-           Under Construction
+           <h2>Contact List</h2>
+            <table>
+                <tr>
+                   <th>First name</th>
+                   <th>Last Name</th>
+                   <th>Email Adress</th>
+                   <th>Phone Number</th>
+                   <th>&nbsp;</th><!--for edit buttom -->
+                   <th>&nbsp;</th><!--for delete buttom -->
+                </tr>
+                <?php foreach ($contacts as $contact): ?>
+                     <tr>
+                         <td><?php echo $contact['firstName']; ?></td>
+                         <td><?php echo $contact['lastName']; ?></td>
+                         <td><?php echo $contact['emailAdress']; ?></td>
+                         <td><?php echo $contact['phone']; ?></td>
+                         <td></td><!--for edit buttom -->
+                         <td></td><!--for delete buttom -->
+                     </tr>
+                  <?php endforeach; ?>
+            </table>
+            <p><a href="add_contact_form.php">Add contact</a></p>
       </main>
       <?php include("footer.php"); ?>
   </body>

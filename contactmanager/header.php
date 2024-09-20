@@ -1,3 +1,3 @@
 <header>
-    <h1>contact Manager System</h1>
+    <h1>Contact Manager System</h1>
 </header>
